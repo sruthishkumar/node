@@ -1,0 +1,25 @@
+{
+  "name": "sruthish",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0",
+    "nodemon": "^3.1.10"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sruthishkumar/node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sruthishkumar/node/issues"
+  },
+  "homepage": "https://github.com/sruthishkumar/node#readme"
+}
