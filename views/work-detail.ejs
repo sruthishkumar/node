@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> • Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('partials/nav') %>
+  <main class="container">
+    <a href="/works" class="btn">← Back to Works</a>
+    <h1 style="margin-top:12px;"><%= item.title %></h1>
+    <p class="muted"><%= item.summary %></p>
+    <div style="margin-top:12px;">
+      <% item.tech.forEach(t => { %><span class="chip"><%= t %></span><% }) %>
+    </div>
+    <div class="card" style="margin-top:16px;">
+      <p>This is a placeholder. Put a case study, screenshots, and links here.</p>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> • Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('partials/nav') %>
+  <main class="container">
+    <h1>About</h1>
+    <p class="muted">Hi, I’m <strong>Sruthish Kumar</strong> — I build helpful, human‑centered products and love turning ideas into polished apps.</p>
+    <div class="grid" style="margin-top:12px;">
+      <div class="card">
+        <h3>Bio</h3>
+        <p>I’m a full‑stack developer who enjoys clean UX, fast performance, and practical AI. I build products end‑to‑end with JavaScript/TypeScript, Node.js, and modern cloud.</p>
+      </div>
+      <div class="card">
+        <h3>Skills</h3>
+        <p><span class="chip">JavaScript</span><span class="chip">Node.js</span><span class="chip">React</span><span class="chip">AWS</span></p>
+      </div>
+      <div class="card">
+        <h3>Highlights</h3>
+        <ul>
+          <li>Shipped 5 production apps used by 100k+ users</li>
+          <li>Speaker at local JS meetups</li>
+        </ul>
+      </div>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

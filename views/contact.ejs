@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> • Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('partials/nav') %>
+  <main class="container">
+    <h1>Contact</h1>
+    <p class="muted">Say hi! This demo posts to the server and shows a thank‑you page.</p>
+    <form method="post" action="/contact" style="margin-top:12px;">
+      <input required name="name" placeholder="Your name">
+      <input required type="email" name="email" placeholder="Email">
+      <textarea required name="message" placeholder="Message"></textarea>
+      <button class="cta" type="submit">Send →</button>
+    </form>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

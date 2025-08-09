@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title><%= title %> • Portfolio</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <%- include('partials/nav') %>
+  <main class="container">
+    <h1>Works</h1>
+    <p class="muted">A selection of projects I’ve designed and built.</p>
+    <div class="grid" style="margin-top:12px;">
+      <% works.forEach(w => { %>
+        <a class="card" href="/works/<%= w.slug %>">
+          <h3><%= w.title %></h3>
+          <p class="muted"><%= w.summary %></p>
+          <div style="margin-top:8px;">
+            <% w.tech.forEach(t => { %><span class="chip"><%= t %></span><% }) %>
+          </div>
+        </a>
+      <% }) %>
+    </div>
+  </main>
+  <%- include('partials/footer') %>
+</body>
+</html>

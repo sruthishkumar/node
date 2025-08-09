@@ -1,25 +1,24 @@
 {
-  "name": "sruthish",
+  "name": "portfolio-node",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
+  "description": "A sleek portfolio site built with Node.js, Express, and EJS.",
+  "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "build:css": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --minify",
+    "tailwind:watch": "tailwindcss -i ./src/input.css -o ./public/css/styles.css --watch",
+    "postinstall": "npm run build:css"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
-    "express": "^5.1.0",
-    "nodemon": "^3.1.10"
+    "ejs": "^3.1.9",
+    "express": "^4.19.2"
   },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/sruthishkumar/node.git"
-  },
-  "bugs": {
-    "url": "https://github.com/sruthishkumar/node/issues"
-  },
-  "homepage": "https://github.com/sruthishkumar/node#readme"
+  "devDependencies": {
+    "nodemon": "^3.1.0",
+    "tailwindcss": "^3.4.10",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.41"
+  }
 }
